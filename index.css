@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: linear-gradient(#CB3D6F, #CCCCCC); /* Vertical ombre */
+    background: linear-gradient(#CB3D6F, #ffffff); /* Vertical ombre */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -54,7 +54,7 @@ img {
 }
 
 footer {
-    background: linear-gradient(#CCCCCC, #CB3D6F); /* Vertical ombre from green to pink */
+    background: linear-gradient(#CCCCCC, #ffffff); /* Vertical ombre from green to pink */
     color: #fff;
     text-align: center;
     padding: 10px 0;
