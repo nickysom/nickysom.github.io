@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #CCCCCC; /* Bright pink  */
+    background-color: ##ffffff; /* white background  */
 }
 
 header {
@@ -54,7 +54,7 @@ img {
 }
 
 footer {
-    background: linear-gradient(#CCCCCC, #ffffff); /* Vertical ombre from green to pink */
+    background: linear-gradient(#ffffff, #CCCCCC); /* Vertical ombre from green to pink */
     color: #fff;
     text-align: center;
     padding: 10px 0;
