@@ -3,11 +3,11 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #CCCCCC; /* Set background color */
+    background-color: #0F292F; /* Darker green */
 }
 
 header {
-    background: linear-gradient(to right, #CB3D6F, #CCCCCC, #14A098, #0F292F); /* Horizontal ombre */
+    background: linear-gradient(#14A098, #CCCCCC, #CB3D6F); /* Vertical ombre */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -41,7 +41,7 @@ nav ul li a {
 
 section {
     padding: 20px;
-    background-color: #CCCCCC; /* Set background color */
+    background-color: #0F292F; /* Darker green */
 }
 
 img {
@@ -54,10 +54,11 @@ img {
 }
 
 footer {
-    background: linear-gradient(to right, #CB3D6F, #CCCCCC, #14A098, #0F292F); /* Horizontal ombre */
+    background: linear-gradient(#14A098, #CB3D6F); /* Vertical ombre from green to pink */
     color: #fff;
     text-align: center;
     padding: 10px 0;
 }
+
 
 
