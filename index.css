@@ -40,6 +40,8 @@ header .logo img{
 header nav{
     float: right;
     height: 100%;
+    text-align: center; /* Center the text horizontally */
+    padding-right: 20px; /* Add padding to the right */
 }
 
 header nav li{
@@ -59,12 +61,12 @@ header nav span {
 }
 
 header nav a{
-    color: #101010;
+    color: #0F292F; /* Text color */
 }
 
 header nav .button{
-    background-color: #1ab26b; /* This HEX is the color of the button */
-    color: #FFF;
+    background-color: #CB2D6F; /* Button background color */
+    color: #FFF; /* Button text color */
     padding: 10px 20px;
     border-radius: 4px;
 }
@@ -73,4 +75,12 @@ header nav .button:hover{
     filter: brightness(1.05);
 }
 
+/* Additional colors */
+header nav .link1{
+    color: #14A098;
+}
+
+header nav .link2{
+    color: #CCCCCC;
+}
 
