@@ -3,11 +3,11 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #E7E8D1; /* Changed background color */
+    background-color: #A9CCC4; /* Changed background color */
 }
 
 header {
-    background: #B85042; /* Changed background color */
+    background: #E05A57; /* Changed background color */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -35,7 +35,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #A7BEAE; /* Changed link color */
+    color: #528089; /* Changed link color */
     text-decoration: none;
 }
 
@@ -48,14 +48,15 @@ img {
     max-height: 50%;
     display: block;
     margin: 0 auto;
-    border: 5px solid #555;
+    border: 1.75px solid #555;
     border-color: black;
 }
 
 footer {
-    background: #B85042; /* Changed background color */
+    background: #E05A57; /* Changed background color */
     color: #fff;
     text-align: center;
     padding: 10px 0;
 }
+
 
