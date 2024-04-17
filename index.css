@@ -3,11 +3,11 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #CB3D6F; /* Bright pink  */
+    background-color: #CCCCCC; /* Bright pink  */
 }
 
 header {
-    background: linear-gradient(#14A098, #CCCCCC, #CB3D6F); /* Vertical ombre */
+    background: linear-gradient(#CB3D6F, #CCCCCC); /* Vertical ombre */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -41,7 +41,7 @@ nav ul li a {
 
 section {
     padding: 20px;
-    background-color: #CB3D6F; /* bright pink */
+    background-color: #CCCCCC; /* bright pink */
 }
 
 img {
@@ -54,7 +54,7 @@ img {
 }
 
 footer {
-    background: linear-gradient(#CB3D6F,#CCCCCC, #14A098); /* Vertical ombre from green to pink */
+    background: linear-gradient(#CCCCCC, #CB3D6F); /* Vertical ombre from green to pink */
     color: #fff;
     text-align: center;
     padding: 10px 0;
