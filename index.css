@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #0F292F; /* Darker green */
+    background-color: #CB3D6F; /* Bright pink  */
 }
 
 header {
@@ -41,7 +41,7 @@ nav ul li a {
 
 section {
     padding: 20px;
-    background-color: #0F292F; /* Darker green */
+    background-color: #CB3D6F; /* bright pink */
 }
 
 img {
