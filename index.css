@@ -84,3 +84,14 @@ header nav .link2{
     color: #CCCCCC;
 }
 
+/**/
+.image-container {
+    display: flex;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    flex: 1;
+}
