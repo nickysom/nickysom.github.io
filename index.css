@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: linear-gradient(#CB3D6F, #CCCCCC, #14A098, #0F292F); /* Vertical ombre */
+    background: linear-gradient(to right, #CB3D6F, #CCCCCC, #14A098, #0F292F); /* Horizontal ombre */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -41,6 +41,7 @@ nav ul li a {
 
 section {
     padding: 20px;
+    background-color: #CCCCCC; /* Set background color */
 }
 
 img {
@@ -53,7 +54,7 @@ img {
 }
 
 footer {
-    background: linear-gradient(#CB3D6F, #CCCCCC, #14A098, #0F292F); /* Vertical ombre */
+    background: linear-gradient(to right, #CB3D6F, #CCCCCC, #14A098, #0F292F); /* Horizontal ombre */
     color: #fff;
     text-align: center;
     padding: 10px 0;
