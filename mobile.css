@@ -1,3 +1,7 @@
+/* Common styles */
+
+body/* Common styles */
+
 body {
     font-family: Times New Roman, Times, serif;
     margin: 0;
@@ -6,6 +10,8 @@ body {
     background: #fff;
 }
 
+/* Mobile styles */
+
 header {
     background: url(mobo.jpg) no-repeat center center; 
     background-size: cover;
@@ -13,20 +19,13 @@ header {
     padding: 20px;
     text-align: center;
     font-family: fairwater-open-serif, sans-serif;
-    font-weight: 800;
+    font-weight: bold; /* Changed font weight to bold */
     font-style: normal;
     white-space: nowrap;
-}
-
-.image-container {
+    height: 100vh; /* Makes the header fit the entire screen vertically */
     display: flex;
-    justify-content: space-between;
-}
-
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul {
@@ -35,8 +34,8 @@ nav ul {
 }
 
 nav ul li {
-    display: block;
-    margin-bottom: 10px;
+    display: inline;
+    margin-right: 10px;
 }
 
 nav ul li a {
@@ -48,13 +47,12 @@ section {
     padding: 20px;
 }
 
-img {
+.image-container img {
     max-width: 100%;
     height: auto;
+    aspect-ratio: 1 / 1;
     display: block;
-    margin: 0 auto;
-    border: 2px solid #555;
-    border-color: black;
+    margin-bottom: 20px; /* Separates images */
 }
 
 footer {
