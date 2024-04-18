@@ -55,6 +55,11 @@ section {
     padding: 20px;
 }
 
+.portfolio-images img {
+    max-width: 100%; /* Set max width to 100% */
+    height: auto; /* Allow height to adjust proportionally */
+    margin-bottom: 20px; /* Separates images */
+}
 .image-container img {
     max-width: 100%;
     height: auto;
