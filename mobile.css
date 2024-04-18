@@ -22,8 +22,6 @@ header {
     font-weight: bold; /* Changed font weight to bold */
     font-style: normal;
     white-space: nowrap;
-    height: 100vh; /* Makes the header fit the entire screen vertically */
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
