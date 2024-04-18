@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: url(/mobo.jpg) no-repeat center center; /* Replace 'path/to/header_image.jpg' with the path to your header image */
+    background: url(mobo.jpg) no-repeat center center; /* Replace 'path/to/header_image.jpg' with the path to your header image */
     background-size: cover;
     color: #fff;
     padding: 20px;
@@ -55,7 +55,7 @@ img {
 }
 
 footer {
-    background: url(/mobo.jpg) no-repeat center center; /* Replace 'path/to/footer_image.jpg' with the path to your footer image */
+    background: url(mobo.jpg) no-repeat center center; /* Replace 'path/to/footer_image.jpg' with the path to your footer image */
     background-size: cover;
     color: #fff;
     text-align: center;
