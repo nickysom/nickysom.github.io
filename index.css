@@ -6,6 +6,11 @@ body {
     background: linear-gradient(to bottom right, #3c35e1, #2661db, #851fee); /* Diagonal ombre */
 }
 
+head {
+        background: url('path/to/header_image.jpg') no-repeat center center; /* Replace 'path/to/header_image.jpg' with the path to your    header image */
+    font-family: 'Didot', serif; /* Use Didot font */
+}
+
 header {
     background: url(mobo.jpg) no-repeat center center; /* Replace 'path/to/header_image.jpg' with the path to your header image */
     background-size: cover;
