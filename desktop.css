@@ -1,11 +1,18 @@
+/* Desktop styles */
 @media (min-width: 768px) {
     header {
         height: 120px; /* Adjusted header height for desktop */
     }
 
-    .portfolio-images img {
-        width: 200px; /* Set width to 200 pixels */
-        height: auto; /* Allow height to adjust proportionally */
+    .image-container img {
+        max-width: 30%;
+        height: auto;
+        aspect-ratio: 1 / 1;
         margin-bottom: 20px; /* Separates images */
+        margin-right: 10px; /* Creates space between images */
     }
-    
+
+    section#about p {
+        white-space: nowrap; /* Keeps the about text on one line */
+    }
+}
