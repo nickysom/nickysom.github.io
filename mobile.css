@@ -61,14 +61,6 @@ section {
     margin-bottom: 20px; /* Separates images */
 }
 
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    display: block;
-    margin-bottom: 20px; /* Separates images */
-}
-
 footer {
     background: url(mobo.jpg) no-repeat center center; 
     background-size: cover;
