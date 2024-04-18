@@ -1,19 +1,9 @@
-/* Common styles */
-
-body {
-    font-family: Times New Roman, Times, serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background: #fff;
-}
-
 /* Mobile styles */
 
 header {
     background: url(mobo.jpg) no-repeat center center; 
     background-size: cover;
-    color: #ffffff; /* Changed text color to white for better visibility */
+    color: #333333; /* Changed text color to a darker shade */
     padding: 20px;
     text-align: center;
     font-family: fairwater-open-serif, sans-serif;
@@ -29,6 +19,7 @@ header {
 
 header h1 {
     margin: 0;
+    font-weight: bold; /* Make the title text bold */
 }
 
 nav ul {
@@ -47,24 +38,27 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #333333; /* Changed link text color to a darker shade */
     text-decoration: none;
+    font-weight: bold; /* Make the link text bold */
 }
 
 section {
     padding: 20px;
 }
 
-.portfolio img {
-    width: 200px; /* Set width to 200 pixels */
-    height: auto; /* Allow height to adjust proportionally */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    display: block;
     margin-bottom: 20px; /* Separates images */
 }
 
 footer {
     background: url(mobo.jpg) no-repeat center center; 
     background-size: cover;
-    color: #000000;
+    color: #333333; /* Changed text color to a darker shade */
     text-align: center;
     padding: 10px 0;
     font-family: fairwater-solid-serif, sans-serif;
