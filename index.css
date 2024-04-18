@@ -1,10 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Times New Roman", Times, serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: #000000;
-    color: fff;
+    background: #fff;
 }
 
 
@@ -63,7 +62,7 @@ img {
 footer {
     background: url(mobo.jpg) no-repeat center center; 
     background-size: cover;
-    color: #0000000;
+    color: #000000;
     text-align: center;
     padding: 10px 0;
     text-align: center;
