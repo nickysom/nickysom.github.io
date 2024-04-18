@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #0F292F; /* Darker green */
+    background: linear-gradient(to bottom right, #3c35e1, #2661db, #851fee); /* Diagonal ombre */
 }
 
 header {
@@ -42,15 +42,14 @@ nav ul li a {
 
 section {
     padding: 20px;
-    background-color: #0F292F; /* Darker green */
 }
 
 img {
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 75%;
+    max-height: 75%;
     display: block;
     margin: 0 auto;
-    border: 5px solid #555;
+    border: 2px solid #555;
     border-color: black;
 }
 
@@ -61,6 +60,7 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
 
 
 
