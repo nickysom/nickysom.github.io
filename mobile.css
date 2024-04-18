@@ -1,7 +1,5 @@
 /* Common styles */
 
-body/* Common styles */
-
 body {
     font-family: Times New Roman, Times, serif;
     margin: 0;
@@ -15,30 +13,41 @@ body {
 header {
     background: url(mobo.jpg) no-repeat center center; 
     background-size: cover;
-    color: #000000;
+    color: #ffffff; /* Changed text color to white for better visibility */
     padding: 20px;
     text-align: center;
     font-family: fairwater-open-serif, sans-serif;
     font-weight: bold; /* Changed font weight to bold */
     font-style: normal;
     white-space: nowrap;
+    height: 80px; /* Set header height */
+    width: 100%; /* Makes the header fit the entire screen horizontally */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+header h1 {
+    margin: 0;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    display: inline-block; /* Display li elements inline */
+    margin-right: 20px; /* Increased margin for better spacing */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin for the last link */
 }
 
 nav ul li a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
 }
 
