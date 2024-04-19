@@ -1,73 +1,187 @@
-/* Mobile styles */
+/* Header and Navigation */
+#banner {
+    background-image: url('path/to/your/image.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px; /* Adjust the height as needed */
+}
 
 header {
-    background: url(mobo.jpg) no-repeat center center; 
-    background-size: cover;
-    color: #333333; /* Changed text color to a darker shade */
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     text-align: center;
-    font-family: fairwater-open-serif, sans-serif;
-    font-weight: bold; /* Changed font weight to bold */
-    font-style: normal;
-    white-space: nowrap;
-    height: 80px; /* Set header height */
-    width: 100%; /* Makes the header fit the entire screen horizontally */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative; /* Add position relative */
+    z-index: 1; /* Set z-index to ensure the header stays on top */
 }
 
 header h1 {
     margin: 0;
-    font-weight: bold; /* Make the title text bold */
+    padding: 0;
+    color: #fff;
+}
+
+nav {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: relative; /* Add position relative */
+    z-index: 1; /* Set z-index to ensure the navigation stays on top */
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline-block; /* Display li elements inline */
-    margin-right: 20px; /* Increased margin for better spacing */
+    display: inline;
+    margin-right: 10px;
 }
 
 nav ul li:last-child {
-    margin-right: 0; /* Remove margin for the last link */
+    margin-right: 0;
 }
 
 nav ul li a {
-    color: #333333; /* Changed link text color to a darker shade */
+    display: inline-block;
+    padding: 10px;
     text-decoration: none;
-    font-weight: bold; /* Make the link text bold */
+    color: #333;
+    transition: background-color 0.3s;
 }
 
-section {
+nav ul li a:hover {
+    background-color: #ccc;
+}
+
+/* Main Content */
+#content {
     padding: 20px;
+    position: relative; /* Add position relative */
+    z-index: 0; /* Set z-index to ensure the content stays below the header and navigation */
 }
 
-section#portfolio {
-        width: 200px; /* Set width to 200 pixels */
-        height: auto; /* Allow height to adjust proportionally */
-        margin-bottom: 20px; /* Separates images */
+/* About Section */
+#divB {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Add position relative */
+    z-index: 0; /* Set z-index to ensure the content stays below the header and navigation */
+}
+
+#about {
+    text-align: center;
+}
+
+#about h2 {
+    color: #333;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .image-container img {
-    max-width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    display: block;
-    margin-bottom: 20px; /* Separates images */
+    width: 200px; /* Adjust image size as needed */
+    height: 200px; /* Set the height equal to the width */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    margin: 0 10px; /* Add spacing between images */
+    border: 2px solid #ccc; /* Add a border with a light gray color */
+    border-radius: 0; /* Remove border radius to make images square */
 }
 
-footer {
-    background: url(mobo.jpg) no-repeat center center; 
-    background-size: cover;
-    color: #333333; /* Changed text color to a darker shade */
+#about p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Resume Section */
+#divC {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Add margin to separate from previous section */
+}
+
+#resume {
     text-align: center;
-    padding: 10px 0;
-    font-family: fairwater-solid-serif, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+}
+
+#resume h2 {
+    color: #333;
+}
+
+#resume p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+#resume img {
+    width: 100%; /* Make the image fill the container */
+    max-width: 800px; /* Set maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center the image */
+    margin: 0 auto 20px; /* Center the image and add spacing below */
+}
+
+/* Portfolio Section */
+#divD {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Add margin to separate from previous section */
+}
+
+#portfolio {
+    text-align: center;
+}
+
+#portfolio h2 {
+    color: #333;
+}
+
+#portfolio img {
+    width: 000px; /* Set the width of the images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add spacing between images */
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  nav ul li {
+    margin-right: 5px; /* Reduce margin between navigation items for smaller screens */
+  }
+
+  .image-container img {
+    width: 150px; /* Decrease image size for smaller screens */
+    height: 150px; /* Set the height equal to the width */
+    margin: 0 5px; /* Reduce spacing between images for smaller screens */
+  }
+
+  #about p {
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
 }
