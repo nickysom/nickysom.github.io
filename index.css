@@ -1,3 +1,10 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Use a common sans-serif font */
+    background-color: #f0f0f0; /* Set a background color */
+}
+
 /* Header and Navigation */
 #banner {
     background-image: url('mobo.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
@@ -52,8 +59,9 @@ nav ul li a {
     transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
-    background-color: #ccc;
+nav ul li a.active {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker version of the background color */
+    color: #fff; /* Change text color to white */
 }
 
 /* Main Content */
@@ -65,102 +73,40 @@ nav ul li a:hover {
 }
 
 /* About Section */
-#divB {
+#divB, #divC, #divD {
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative; /* Add position relative */
     z-index: 0; /* Set z-index to ensure the content stays below the header and navigation */
-}
-
-#about {
-    text-align: center;
-}
-
-#about h2 {
-    color: #333;
-}
-
-.image-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    max-width: 100%; /* Set a maximum width to ensure it stays within website bounds */
-    overflow-x: auto; /* Add horizontal scrolling if necessary on small screens */
-}
-
-.image-container img {
-    width: 200px; /* Adjust image size as needed */
-    height: 200px; /* Set the height equal to the width */
-    object-fit: cover; /* Ensure the image covers the entire area */
-    margin: 0 10px; /* Add spacing between images */
-    border: 2px solid #ccc; /* Add a border with a light gray color */
-    border-radius: 0; /* Remove border radius to make images square */
-}
-
-
-#about p {
-    color: #666;
-    line-height: 1.6;
-    font-size: 16px;
-}
-
-/* Resume Section */
-#divC {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px; /* Add margin to separate from previous section */
 }
 
-#resume {
+#about, #resume, #portfolio {
     text-align: center;
 }
 
-#resume h2 {
+#about h2, #resume h2, #portfolio h2 {
     color: #333;
 }
 
-#resume p {
+#about p, #resume p {
     color: #666;
     line-height: 1.6;
     font-size: 16px;
 }
 
-#resume img {
-    width: 100%; /* Make the image fill the container */
-    max-width: 800px; /* Set maximum width for the image */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Center the image */
-    margin: 0 auto 20px; /* Center the image and add spacing below */
+#about p {
+    font-size: 16px;
 }
 
 /* Portfolio Section */
-#divD {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; /* Add margin to separate from previous section */
-}
-
-#portfolio {
-    text-align: center;
-}
-
-#portfolio h2 {
-    color: #333;
-}
-
 #portfolio img {
-    width: 000px; /* Set the width of the images */
+    width: 100%; /* Set the width of the images */
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 20px; /* Add spacing between images */
 }
-
-
 
 /* Footer */
 footer {
@@ -172,27 +118,28 @@ footer {
 
 /* Responsive Styling */
 @media screen and (max-width: 768px) {
-  header {
-    padding: 10px; /* Reduce padding for smaller screens */
-  }
+    header {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
 
-  nav ul li {
-    margin-right: 5px; /* Reduce margin between navigation items for smaller screens */
-  }
+    nav ul li {
+        margin-right: 5px; /* Reduce margin between navigation items for smaller screens */
+    }
 
     .image-container {
-            flex-wrap: wrap; /* Allow images to wrap to the next line */
-            justify-content: flex-start; /* Align images to the start */
-            overflow-x: hidden; /* Hide horizontal scrollbar */
-        }
-    
-    .image-container img {
-            width: 100%; /* Make images fill the container width */
-            height: auto; /* Let the height adjust proportionally */
-            margin: 10px 0; /* Adjust spacing between images */
-        }
+        flex-wrap: wrap; /* Allow images to wrap to the next line */
+        justify-content: flex-start; /* Align images to the start */
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
 
-  #about p {
-    font-size: 14px; /* Decrease font size for smaller screens */
-  }
+    .image-container img {
+        width: 100%; /* Make images fill the container width */
+        height: auto; /* Let the height adjust proportionally */
+        margin: 10px 0; /* Adjust spacing between images */
+    }
+
+    #about p {
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
 }
+
