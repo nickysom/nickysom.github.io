@@ -1,10 +1,18 @@
 /* Header and Navigation */
+banner｛
+background-image: url('mobo.jpg'); /* Replace 'path*/
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 120px; /* Adjust the height as needed */
+padding-top: 30px;
+
 header {
     padding: 20px 20px 0; /* Adjust padding to add more space at the bottom */
     text-align: center;
     position: relative; /* Add position relative */
     z-index: 2; /* Increase z-index to ensure the header stays on top */
-    background-color: rgba(0, 0, 0, 0.7); /* Add white transparent background */
+    
 }
 
 header h1 {
