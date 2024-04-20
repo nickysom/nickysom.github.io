@@ -1,11 +1,9 @@
 /* Header and Navigation */
 banner｛
-background-image: url('mobo.jpg'); /* Replace 'path*/
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-height: 120px; /* Adjust the height as needed */
-padding-top: 30px;
+    background-image: url('mobo.jpg'); /* Replace 'path*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 header {
     padding: 20px 20px 0; /* Adjust padding to add more space at the bottom */
