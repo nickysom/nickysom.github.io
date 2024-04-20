@@ -73,7 +73,7 @@ nav ul li a.active {
 }
 
 /* About Section */
-#divB, #divC {
+#divB {
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
@@ -81,6 +81,23 @@ nav ul li a.active {
     position: relative; /* Add position relative */
     z-index: 0; /* Set z-index to ensure the content stays below the header and navigation */
     margin-top: 20px; /* Add margin to separate from previous section */
+}
+
+/* Resume Section */
+#divC {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Add margin to separate from previous section */
+    text-align: center; /* Center the resume image */
+}
+
+#resume img {
+    max-width: 100%; /* Set a maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center the image */
+    margin: 0 auto 20px; /* Center the image and add spacing below */
 }
 
 /* Portfolio Section */
