@@ -1,36 +1,20 @@
-/* General Styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif; /* Use a common sans-serif font */
-    background-color: #f0f0f0; /* Set a background color */
-}
-
 /* Header and Navigation */
-#banner {
-    background-image: url('mobo.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 120px; /* Adjust the height as needed */
-    padding-top: 30px; /* Add padding to the top to prevent overlap with the header */
-}
-
 header {
-    padding: 20px;
+    padding: 20px 20px 0; /* Adjust padding to add more space at the bottom */
     text-align: center;
     position: relative; /* Add position relative */
     z-index: 2; /* Increase z-index to ensure the header stays on top */
+    background-color: rgba(255, 255, 255, 0.7); /* Add white transparent background */
 }
 
 header h1 {
-    margin: 0;
-    padding: 0;
-    color: #fff;
+    margin: 0 auto; /* Center the website title horizontally */
+    padding-bottom: 10px; /* Add padding below the website title */
 }
 
 nav {
     text-align: center;
-    background-color: transparent; /* Set background color to transparent */
+    background-color: transparent; /* Keep the background color transparent */
     position: relative; /* Add position relative */
     z-index: 2; /* Increase z-index to ensure the navigation stays on top */
 }
@@ -64,7 +48,6 @@ nav ul li a.active {
     color: #fff; /* Change text color to white */
     border-radius: 20px; /* Set a higher border-radius for the active state */
 }
-
 
 /* Main Content */
 #content {
