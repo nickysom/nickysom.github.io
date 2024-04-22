@@ -4,15 +4,17 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 200px; /* Adjust the height as needed */
+    height: 100px; /* Adjust the height as needed */
 }
 
 header {
-    padding: 40px 20px 20px; /* Adjust padding to add more space at the bottom */
+    padding: 20px 0; /* Adjust padding to add more space at the bottom */
     text-align: center;
-    position: relative; /* Add position relative */
-    z-index: 2; /* Increase z-index to ensure the header stays on top */
-    
+    position: fixed; /* Add position relative */
+    width: 100%; /* Make header full width */
+    top: 0; /* Position header at the top of the viewport */
+    z-index: 1000; /* Increase z-index to ensure the header stays on top */
+}
 }
 
 header h1 {
@@ -149,13 +151,17 @@ nav ul li a.active {
 
 /* Footer */
 footer {
-    background-image: url('mobo.jpg'); /* Replace 'path*/
+    background-image: url('mobo.jpg'); /* Replace 'path' with the correct image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
     padding: 20px 20px;
     text-align: center;
+    position: fixed; /* Change position to fixed */
+    width: 100%; /* Make footer full width */
+    bottom: 0; /* Position footer at the bottom of the viewport */
+    z-index: 1000; /* Increase z-index to ensure the footer stays on top */
 }
 
 /* Responsive Styling */
