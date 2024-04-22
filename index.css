@@ -15,7 +15,6 @@ header {
     top: 0; /* Position header at the top of the viewport */
     z-index: 1000; /* Increase z-index to ensure the header stays on top */
 }
-}
 
 header h1 {
     margin: 0 auto; /* Center the website title horizontally */
