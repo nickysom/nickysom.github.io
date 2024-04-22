@@ -1,6 +1,6 @@
 /* Header and Navigation */
 #banner {
-    background-image: url('mobo.jpg'); /* Replace 'path*/
+    background-image: url('mobo.jpg'); /* Replace 'path' with the correct image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
 header {
     padding: 20px 0; /* Adjust padding to add more space at the bottom */
     text-align: center;
-    position: fixed; /* Add position relative */
+    position: fixed; /* Add position fixed */
     width: 100%; /* Make header full width */
     top: 0; /* Position header at the top of the viewport */
     z-index: 1000; /* Increase z-index to ensure the header stays on top */
