@@ -161,6 +161,7 @@ footer {
     width: 100%; /* Make footer full width */
     bottom: 0; /* Position footer at the bottom of the viewport */
     z-index: 1000; /* Increase z-index to ensure the footer stays on top */
+    margin: 0; /* Remove margin to prevent extra space */
 }
 
 /* Responsive Styling */
