@@ -6,6 +6,7 @@
     color: #FEFFFF; /* Updated text color */
     padding: 20px 0; /* Adjust padding for spacing */
     text-align: center; /* Center the content horizontally */
+	z-index: -2;
 }
 
 header {
@@ -48,15 +49,17 @@ nav ul li a.active {
 
 /* Shapes */
 .shapes-container {
-    position: relative; /* Change position to relative */
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none; /* Make shapes not clickable */
+    pointer-events: none;
+    z-index: -1; /* Set a lower z-index to position shapes below other content */
 }
 
 .triangle, .circle, .square {
     position: absolute;
-    opacity: 0.3; /* Adjust opacity of the shapes */
 }
 
 .triangle {
@@ -66,6 +69,7 @@ nav ul li a.active {
     height: 300px; /* Adjust size of triangle */
     background-color: #3AAFA9; /* Color of triangle */
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Define triangle shape */
+    opacity: 0.3; /* Adjust opacity of the shape */
 }
 
 .circle {
@@ -76,6 +80,7 @@ nav ul li a.active {
     height: 300px; /* Adjust size of circle */
     background-color: #3AAFA9; /* Color of circle */
     border-radius: 50%; /* Make circle round */
+    opacity: 0.3; /* Adjust opacity of the shape */
 }
 
 .square {
@@ -84,7 +89,9 @@ nav ul li a.active {
     width: 300px; /* Adjust size of square */
     height: 300px; /* Adjust size of square */
     background-color: #3AAFA9; /* Color of square */
+    opacity: 0.3; /* Adjust opacity of the shape */
 }
+
 
 
 /* Main Content */
@@ -95,6 +102,26 @@ nav ul li a.active {
     z-index: 1; /* Set z-index to ensure the content stays above the header and navigation */
 }
 
+.image-container {
+    display: flex;
+    justify-content: center; /* Align images in the center horizontally */
+}
+
+.image-container img {
+    margin: 10px; /* Add space between each image */
+}
+
+/* Add a black border around each image */
+.image-container img {
+    border: 2px solid #000;
+    border-radius: 5px; /* Optional: Add some border radius */
+}
+
+/* Adjust the size of the border */
+.image-container img {
+    padding: 5px; /* Add padding inside the border */
+}
+
 #about h2,
 #resume h2,
 #portfolio h2,
@@ -102,8 +129,37 @@ nav ul li a.active {
     text-align: center;
 }
 
+/* Resume Section */
+#resume {
+    text-align: center;
+    margin-top: 20px; /* Add margin to separate from previous section */
+}
 
-/* About Section */
+#resume img {
+    margin-top: 20px; /* Add margin above the resume image */
+    border: 2px solid #000; /* Add a black border around the resume image */
+    border-radius: 5px; /* Optional: Add some border radius */
+    max-width: 100%; /* Ensure the resume image does not exceed its container width */
+}
+
+/* Portfolio Section */
+#portfolio {
+    text-align: center;
+    margin-top: 20px; /* Add margin to separate from previous section */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Align images in the center horizontally */
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+}
+
+.image-container img {
+    width: 200px; /* Set a fixed width for all images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Add margin between images */
+}
+
 #divB {
     padding: 20px;
     background-color: #FEFFFF; /* Adjusted background color */
@@ -115,7 +171,6 @@ nav ul li a.active {
     color: #3AAFA9; /* Adjust text color */
 }
 
-/* Resume Section */
 #divC {
     padding: 20px;
     background-color: #FEFFFF; /* Adjusted background color */
@@ -150,7 +205,7 @@ nav ul li a.active {
 footer {
     position: relative;
     overflow: hidden;
-    background-color: #3AAFA9; /* Background color of the footer */
+    background-color: #2B7A78; /* Background color of the footer */
     color: #FEFFFF;
     padding: 20px 20px;
     text-align: center;
@@ -210,16 +265,13 @@ footer {
         margin-right: 5px; /* Reduce margin between navigation items for smaller screens */
     }
 
-    .image-container {
+	.image-container {
         flex-wrap: wrap; /* Allow images to wrap to the next line */
-        justify-content: flex-start; /* Align images to the start */
-        overflow-x: hidden; /* Hide horizontal scrollbar */
     }
 
     .image-container img {
-        width: 100%; /* Make images fill the container width */
-        height: auto; /* Let the height adjust proportionally */
-        margin: 10px 0; /* Adjust spacing between images */
+        width: calc(50% - 20px); /* Make images fill half the container width with space between them */
+        margin: 10px; /* Adjust spacing between images */
     }
 
     #about p {
