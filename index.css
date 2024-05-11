@@ -222,7 +222,7 @@ footer {
     overflow: hidden;
     background-color: #2B7A78; /* Background color of the footer */
     color: #FEFFFF;
-    padding: 20px 20px;
+    padding: 20px; /* Adjust padding to match other sections */
     text-align: center;
     width: 100%;
     z-index: 1000;
