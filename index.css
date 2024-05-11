@@ -196,6 +196,13 @@ nav ul li a.active {
     width: 200px; /* Set a fixed width for all images */
     height: auto; /* Maintain aspect ratio */
     margin: 10px; /* Add margin between images */
+    border: 2px solid #000; /* Add border around images */
+    border-radius: 5px; /* Optional: Add border radius */
+}
+
+/* Add hover effect on image borders */
+#divD a:hover img {
+    border-color: #3AAFA9; /* Change border color on hover */
 }
 
 
